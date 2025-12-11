@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0c2b3e, #1a3a52, #2c4e6e);
+    color: #f0f0f0;
+    min-height: 100vh;
+    overflow: hidden;
+    cursor: none;
+}
+
+svg {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background: transparent;
+}
+
+.fire-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 12px 24px;
+    border-radius: 30px;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fire-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.status-light {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0f0;
+    box-shadow: 0 0 8px #0f0;
+    transition: all 0.3s ease;
+}
+
+.instructions {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.instructions p {
+    white-space: nowrap;
+}
+
+.sound-controls {
+    margin-left: 10px;
+}
+
+.sound-btn {
+    background: rgba(255, 107, 0, 0.2);
+    border: 1px solid rgba(255, 107, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sound-btn:hover {
+    background: rgba(255, 107, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.sound-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #ff6b00;
+}
+
+.sound-btn.muted svg {
+    fill: #888;
+}
+
+/* Animación de parpadeo para cuando está cargando el fuego */
+@keyframes fireReady {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
