@@ -83,6 +83,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detal
 
 📧 Contacto
 
-Tu Nombre - @SnakeDev - snakegameoficiall2025@gmail.com
+SnakeDev - @snakeoficial(Tiktok) - snakegameoficiall2025@gmail.com
 
 Enlace del Proyecto: https://github.com/SnakeDevOficiall/Dragon
