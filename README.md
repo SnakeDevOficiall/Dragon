@@ -85,4 +85,4 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detal
 
 Tu Nombre - @SnakeDev - snakegameoficiall2025@gmail.com
 
-Enlace del Proyecto: https://github.com/tu-usuario/dragon-esqueleto
+Enlace del Proyecto: https://github.com/SnakeDevOficiall/Dragon
